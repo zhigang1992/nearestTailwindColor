@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const {colors} = require('./colors');
 
 const flattenedColor = {};
@@ -14,5 +16,6 @@ for (let colorsKey in colors) {
 
 const nearestColor = require('nearest-color').from(flattenedColor);
 
-console.log(nearestColor('#F2F2F2'));
+const result = nearestColor(process.argv[process.argv.length - 1]);
+console.log(`${result.name} - ${result.value}`);
 

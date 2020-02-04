@@ -5,5 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "nearest-color": "^0.4.4"
+  },
+  "bin": {
+    "nearestTailwindColor": "index.js"
   }
 }
